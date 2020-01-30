@@ -8,7 +8,7 @@ public class LlegirFitxerXML {
 
 	public static void main(String[] args) {
         try {
-            File archivo = new File("test.xml");
+            File archivo = new File("alumnes.xml");
             DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
             DocumentBuilder documentBuilder = dbf.newDocumentBuilder();
             Document document = documentBuilder.parse(archivo);
@@ -23,7 +23,7 @@ public class LlegirFitxerXML {
 
 	}
 	
-	//Función recursiva de lectura de lista de nodos
+	//FunciÃ³n recursiva de lectura de lista de nodos
 	private static void obtenerTextoNodosInternos(String linea, NodeList nodeList) {
 		
 		//Recoremos la lista de nodes obtenida
